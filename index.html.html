@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Son Söz – Gizlilik Politikası</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0f0f0f;
+      color: #e5e5e5;
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+      border-bottom: 1px solid #2a2a2a;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(197,160,89,0.12);
+      border: 1px solid rgba(197,160,89,0.3);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #c5a059;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    header h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+
+    header h1 span { color: #c5a059; }
+
+    header p {
+      color: #888;
+      font-size: 15px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 28px;
+      transition: border-color 0.2s;
+    }
+
+    .section:hover { border-color: rgba(197,160,89,0.25); }
+
+    .section-number {
+      font-size: 11px;
+      font-weight: 700;
+      color: #c5a059;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .section h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .section p, .section li {
+      font-size: 14px;
+      line-height: 1.75;
+      color: #aaa;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .section ul li {
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    .section ul li::before {
+      content: '•';
+      color: #c5a059;
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+
+    .highlight {
+      background: rgba(197,160,89,0.08);
+      border: 1px solid rgba(197,160,89,0.2);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: #c5a059;
+      font-weight: 500;
+    }
+
+    .contact-link {
+      color: #c5a059;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-link:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid #1a1a1a;
+      color: #555;
+      font-size: 13px;
+    }
+
+    footer span { color: #c5a059; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">⚖️ Son Söz: Dijital Mahkeme</div>
+  <h1>Gizlilik <span>Politikası</span></h1>
+  <p>Son güncelleme: Mayıs 2025</p>
+</header>
+
+<main>
+
+  <div class="section">
+    <div class="section-number">Bölüm 01</div>
+    <h2>Toplanan Veriler</h2>
+    <p>Son Söz uygulaması, yalnızca cihazınızda yerel olarak şu verileri saklar:</p>
+    <ul>
+      <li>Ad soyad ve kullanıcı adı</li>
+      <li>E-posta adresi ve şifre (yalnızca cihazda, şifrelenmemiş)</li>
+      <li>Oluşturulan davalar ve analizler</li>
+      <li>Uygulama içi jeton bakiyesi ve rozet ilerlemesi</li>
+      <li>Bildirim ve tema tercihleri</li>
+    </ul>
+    <div class="highlight">Bu veriler hiçbir sunucuya gönderilmez. Yalnızca cihazınızın yerel depolama alanında (SharedPreferences) tutulur.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Bölüm 02</div>
+    <h2>Üçüncü Taraf Hizmetler</h2>
+    <ul>
+      <li><strong style="color:#e5e5e5">Google AdMob:</strong> Reklam gösterimi için kullanılır. AdMob kendi gizlilik politikasına tabidir.</li>
+      <li><strong style="color:#e5e5e5">Groq AI:</strong> Dava analizleri için anonim metin verisi işlenir. Kişisel kimlik bilgisi gönderilmez.</li>
+      <li><strong style="color:#e5e5e5">Firebase:</strong> Temel uygulama altyapısı ve çökme raporlama için kullanılır.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Bölüm 03</div>
+    <h2>Veri Güvenliği</h2>
+    <p>Tüm kullanıcı verileri cihazınızda yerel olarak saklanır. Uygulama kaldırıldığında tüm veriler otomatik olarak silinir. Biyometrik doğrulama yalnızca cihaz donanımı üzerinden gerçekleştirilir; uygulama hiçbir biyometrik veri toplamaz veya saklamaz.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Bölüm 04</div>
+    <h2>Çocukların Gizliliği</h2>
+    <p>Son Söz uygulaması 13 yaş altı kullanıcılara yönelik değildir. Bu yaş grubundan bilinçli olarak herhangi bir kişisel veri toplanmaz. Ebeveyn veya vasi olarak çocuğunuzun uygulamamızı kullandığını fark ederseniz bizimle iletişime geçiniz.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Bölüm 05</div>
+    <h2>Kullanıcı Hakları</h2>
+    <p>Verileriniz cihazınızda yerel olarak tutulduğundan, uygulamayı kaldırarak tüm verilerinizi silebilirsiniz. Hesap bilgilerinizi uygulama içinden düzenleyebilir, davanızı ve analizlerinizi istediğiniz zaman silebilirsiniz.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">Bölüm 06</div>
+    <h2>İletişim</h2>
+    <p>Gizlilik politikası hakkında sorularınız veya talepleriniz için bizimle iletişime geçebilirsiniz:</p>
+    <br/>
+    <a href="mailto:sonsozapp@gmail.com" class="contact-link">sonsozapp@gmail.com</a>
+  </div>
+
+</main>
+
+<footer>
+  © 2025 <span>Son Söz: Dijital Mahkeme</span> · Tüm hakları saklıdır.
+</footer>
+
+</body>
+</html>
